@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   @Input() data;
-  constructor() {}
+  view = 'calendar';
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+  goList() {
+    if (this.view === 'calendar') {
+      this.router.navigate(['calendat/list']);
+    } else {
+      this.router.navigate(['calendar/' + this.data.name]);
+    }
+  }
 }

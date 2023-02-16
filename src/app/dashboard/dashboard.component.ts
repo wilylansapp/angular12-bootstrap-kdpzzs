@@ -9,8 +9,8 @@ import { NavigationExtras, Router } from '@angular/router';
 export class DashboardComponent {
   title = 'component-overview';
   calendriersTypes = [
-    { name: 'calendrier-p', type: 1, id: 123456 },
-    { name: 'calendrier-c', type: 2, id: 789456 },
+    { name: 'personnalise', type: 1, id: 123456 },
+    { name: 'cycle', type: 2, id: 789456 },
   ];
   constructor(private router: Router) {}
   onClickCalendrier(itemcalendar) {

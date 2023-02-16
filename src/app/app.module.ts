@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CalendarPComponent } from './calendar-p/calendar-p.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CycleComponent } from './cycle/cycle.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, NgbModule, AppRoutingModule],
@@ -20,6 +21,7 @@ import { CycleComponent } from './cycle/cycle.component';
     CalendarPComponent,
     DashboardComponent,
     CycleComponent,
+    ListComponent,
   ],
   bootstrap: [AppComponent],
 })

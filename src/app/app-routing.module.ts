@@ -6,6 +6,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { CalendarPComponent } from './calendar-p/calendar-p.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CycleComponent } from './cycle/cycle.component';
+import { ListComponent } from './list/list.component';
 
 const routes: Route[] = [
   {
@@ -23,6 +24,10 @@ const routes: Route[] = [
       {
         path: 'cycle',
         component: CycleComponent,
+      },
+      {
+        path: 'list',
+        component: ListComponent,
       },
     ],
   },

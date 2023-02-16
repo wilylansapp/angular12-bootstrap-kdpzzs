@@ -10,7 +10,7 @@ export class CalendarComponent implements OnInit {
   data = 'test header';
   constructor() {}
   ngOnInit() {
-    this.data = history.state.itemcalendar.id;
+    this.data = history.state.itemcalendar;
     console.log('calendar', history.state);
   }
 }
