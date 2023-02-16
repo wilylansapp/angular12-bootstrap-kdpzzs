@@ -13,10 +13,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {}
   goList() {
-    if (this.view === 'calendar') {
-      this.router.navigate(['calendat/list']);
+    if (this.view !== 'list') {
+      this.router.navigate(['calendar/list']);
+      this.view = 'list';
     } else {
       this.router.navigate(['calendar/' + this.data.name]);
+      this.view = 'calendar';
     }
   }
 }
