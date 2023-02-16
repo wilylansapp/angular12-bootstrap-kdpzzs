@@ -1,0 +1,9 @@
+<div>dashboard</div>
+<div class="container">
+  <button
+    *ngFor="let item of calendriersTypes"
+    (click)="onClickCalendrier(item)"
+  >
+    {{ item.name }}
+  </button>
+</div>
