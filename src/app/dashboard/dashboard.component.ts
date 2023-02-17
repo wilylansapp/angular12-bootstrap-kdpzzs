@@ -4,7 +4,7 @@ import { NavigationExtras, Router } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
+  styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
   title = 'component-overview';
@@ -12,7 +12,9 @@ export class DashboardComponent {
     { name: 'personnalise', type: 1, id: 123456 },
     { name: 'cycle', type: 2, id: 789456 },
   ];
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    console.log('dashboard');
+  }
   onClickCalendrier(itemcalendar) {
     const navigationExtras: NavigationExtras = {
       state: {

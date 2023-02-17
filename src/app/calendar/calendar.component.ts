@@ -11,6 +11,6 @@ export class CalendarComponent implements OnInit {
   constructor() {}
   ngOnInit() {
     this.data = history.state.itemcalendar;
-    console.log('calendar', history.state);
+    console.log(this.data);
   }
 }

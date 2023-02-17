@@ -11,7 +11,9 @@ export class HeaderComponent implements OnInit {
   view = 'calendar';
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('in header', this.data);
+  }
   goList() {
     if (this.view !== 'list') {
       this.router.navigate(['calendar/list']);
